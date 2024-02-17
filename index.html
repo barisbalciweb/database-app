@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database-Management</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="container" class="container">
+      <!-- CREATE -->
+      <div id="create-field" class="operation-field">
+        <div class="input-field">
+          <form method="get" id="create-form" class="forms">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="name" required />
+            <label for="type">Type</label>
+            <input id="type" type="text" placeholder="type" required />
+            <label for="quantity">Quantity</label>
+            <input
+              id="quantity"
+              type="number"
+              required
+              placeholder="quantity"
+            />
+            <label for="weight">Weight(kg)</label>
+            <input id="weight" type="number" required placeholder="weight" />
+            <button type="submit">Save</button>
+            <button id="cancel-create">Cancel</button>
+          </form>
+        </div>
+      </div>
+      <!-- DELETE -->
+      <div id="delete-field" class="operation-field">
+        <div class="input-field">
+          <form method="get" id="delete-form" class="forms">
+            <label for="id"
+              >Enter the ID of the product you want to delete:</label
+            >
+            <input id="id-delete" type="number" required placeholder="id" />
+            <button type="submit">Select</button>
+            <button id="cancel-delete">Cancel</button>
+          </form>
+        </div>
+      </div>
+      <!-- UPDATE -->
+      <div id="update-field" class="operation-field">
+        <div id="input-field" class="input-field">
+          <form method="get" id="update-form" class="forms">
+            <label for="id"
+              >Enter the ID of the product you want to update:</label
+            >
+            <input id="id-update" type="number" required placeholder="id" />
+            <button type="submit">Select</button>
+            <button id="cancel-update-1">Cancel</button>
+          </form>
+        </div>
+        <div id="new-values-field" class="new-values-field">
+          <form method="get" id="new-values-form" class="forms">
+            <label for="new-name">New name</label>
+            <input id="new-name" type="text" placeholder="name" required />
+            <label for="new-type">New type</label>
+            <input id="new-type" type="text" placeholder="type" required />
+            <label for="new-quantity">New quantity</label>
+            <input
+              id="new-quantity"
+              type="number"
+              required
+              placeholder="quantity"
+            />
+            <label for="new-weight">New weight(kg)</label>
+            <input
+              id="new-weight"
+              type="number"
+              required
+              placeholder="weight"
+            />
+            <button type="submit">Save</button>
+            <button id="cancel-update-2">Cancel</button>
+          </form>
+        </div>
+      </div>
+      <!-- LIST -->
+      <div class="table-field">
+        <table id="table">
+          <thead>
+            <th id="th-id">ID</th>
+            <th id="th-name">Name</th>
+            <th id="th-type">Type</th>
+            <th id="th-quantity">Quantity</th>
+            <th id="th-weight">Weight(kg)</th>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+      <!-- BUTTONS -->
+      <div class="buttons-field">
+        <div class="buttons-div">
+          <button id="create">Create</button>
+          <button id="update">Update</button>
+          <button id="delete">Delete</button>
+        </div>
+        <p>*Click on table headers to sort items</p>
+      </div>
+      <cite>created by Baris Balci</cite>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
