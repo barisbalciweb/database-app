@@ -1,6 +1,6 @@
 # **Database-Application with UI** (Feb 2024)
 
-# [https://barisbalcimusic.github.io/database-app-with-UI/](https://barisbalcimusic.github.io/database-app-with-UI/)
+### [https://barisbalcimusic.github.io/database-app-with-UI/](https://barisbalcimusic.github.io/database-app-with-UI/)
 
 An exercise for DOM-Manipulation with Vanilla JS.
 
